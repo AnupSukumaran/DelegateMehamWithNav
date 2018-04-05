@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5AEC74461EF776BE00E3C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC74451EF776BE00E3C1CC /* AppDelegate.swift */; };
-		5AEC74481EF776BE00E3C1CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC74471EF776BE00E3C1CC /* ViewController.swift */; };
 		5AEC744B1EF776BE00E3C1CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC74491EF776BE00E3C1CC /* Main.storyboard */; };
 		5AEC744D1EF776BE00E3C1CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC744C1EF776BE00E3C1CC /* Assets.xcassets */; };
 		5AEC74501EF776BE00E3C1CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC744E1EF776BE00E3C1CC /* LaunchScreen.storyboard */; };
+		5AEC74581EF7770A00E3C1CC /* ReceivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC74571EF7770A00E3C1CC /* ReceivingVC.swift */; };
+		5AEC745A1EF7774000E3C1CC /* SendingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC74591EF7774000E3C1CC /* SendingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5AEC74421EF776BE00E3C1CC /* DelegateMeham2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateMeham2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEC74451EF776BE00E3C1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AEC74471EF776BE00E3C1CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5AEC744A1EF776BE00E3C1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AEC744C1EF776BE00E3C1CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AEC744F1EF776BE00E3C1CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AEC74511EF776BE00E3C1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AEC74571EF7770A00E3C1CC /* ReceivingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivingVC.swift; sourceTree = "<group>"; };
+		5AEC74591EF7774000E3C1CC /* SendingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A18C7DC207649C20026094A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5AEC74491EF776BE00E3C1CC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A18C7DD207649CB0026094A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5AEC74571EF7770A00E3C1CC /* ReceivingVC.swift */,
+				5AEC74591EF7774000E3C1CC /* SendingVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5AEC74391EF776BE00E3C1CC = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				5AEC74451EF776BE00E3C1CC /* AppDelegate.swift */,
-				5AEC74471EF776BE00E3C1CC /* ViewController.swift */,
-				5AEC74491EF776BE00E3C1CC /* Main.storyboard */,
+				5A18C7DC207649C20026094A /* View */,
+				5A18C7DD207649CB0026094A /* Controllers */,
 				5AEC744C1EF776BE00E3C1CC /* Assets.xcassets */,
 				5AEC744E1EF776BE00E3C1CC /* LaunchScreen.storyboard */,
 				5AEC74511EF776BE00E3C1CC /* Info.plist */,
@@ -137,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AEC74481EF776BE00E3C1CC /* ViewController.swift in Sources */,
+				5AEC74581EF7770A00E3C1CC /* ReceivingVC.swift in Sources */,
 				5AEC74461EF776BE00E3C1CC /* AppDelegate.swift in Sources */,
+				5AEC745A1EF7774000E3C1CC /* SendingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +324,7 @@
 				5AEC74561EF776BE00E3C1CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
